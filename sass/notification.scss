@@ -1,0 +1,41 @@
+.notification-container {
+	box-sizing: content-box;
+	width: 360px;
+	overflow: hidden;
+	border: none;
+	border-radius: 4px;
+	font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size: 14px;
+    line-height: 1.42857143;
+	color: $color_diesel_approx;
+	text-align: center;
+	text-overflow: ellipsis;
+	box-shadow: 1px 1px 1px 0 $black_30;
+	text-shadow: 1px 1px 1px $black_20;
+    margin-bottom:10px;
+
+    .notify-success {
+        @include notfiy-gen($color_success_heading, $color_success_border, $color_success_background);
+    }
+
+    .notify-error {
+        @include notfiy-gen($color_error_heading, $color_error_border, $color_error_background);
+    }
+
+    .notify-info {
+        @include notfiy-gen($color_info_heading, $color_info_border, $color_info_background);
+    }
+
+
+    hr { 
+        margin : 10px auto 15px;
+        border: 0; 
+        height: 1px; 
+        background-image: -webkit-linear-gradient(left, #f0f0f0, #8c8b8b, #f0f0f0);
+        background-image: -moz-linear-gradient(left, #f0f0f0, #8c8b8b, #f0f0f0);
+        background-image: -ms-linear-gradient(left, #f0f0f0, #8c8b8b, #f0f0f0);
+        background-image: -o-linear-gradient(left, #f0f0f0, #8c8b8b, #f0f0f0); 
+    }
+}
+
+
