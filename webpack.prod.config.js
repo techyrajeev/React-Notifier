@@ -46,7 +46,7 @@ module.exports = {
         },
         {
             test    : /\.scss?$/,
-            loader  : ExtractTextPlugin.extract("style-loader", "css-loader!sass-loader"),
+            loader  : ExtractTextPlugin.extract("style-loader", "css-loader!autoprefixer-loader!sass-loader"),
             include : path.join(__dirname, 'sass')
         },
         {
