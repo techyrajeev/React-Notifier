@@ -4,7 +4,7 @@
   "description": "\"RiskIdent Test Web App\"",
   "main": "server.js",
   "scripts": {
-    "clean": "rimraf public/bundle.*",
+    "clean": "rimraf public/bundle.* public/style.*",
     "build": "cross-env NODE_ENV=production webpack --config ./webpack.prod.config.js --progress --colors",
     "postinstall": "npm run clean && npm run build",
     "start": "node server.js",
