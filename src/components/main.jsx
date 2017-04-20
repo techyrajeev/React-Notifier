@@ -20,8 +20,8 @@ export default class Main extends React.Component {
 
         const notificationObject = {
             type    : this.nType.value,
-            content : this.nBody.value,
-            title   : this.nHeading.value
+            title   : this.nHeading.value,
+            content : this.nBody.value
         };
 
         let newData = [notificationObject, ...this.state.data];

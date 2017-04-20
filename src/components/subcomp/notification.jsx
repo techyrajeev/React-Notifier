@@ -1,11 +1,6 @@
 import React     from 'react';
 import PropTypes from 'prop-types';
-
-const iconMap = {
-    "success" : "check_circle",
-    "info"    : "info",
-    "error"   : "cancel"
-};
+import Utlis     from '../utils/utils';
 
 export default class Notification extends React.Component {
 
@@ -23,13 +18,14 @@ export default class Notification extends React.Component {
     getNotificationBasedOnType() {
 
         const { type, content, title, index} = this.props;
-        const iconName = iconMap[type];
-
+        const iconName = Utlis.iconMap[type];
 
         return (
             <div className={`notify-${type}`}>
                 <h3 className="heading">
-                    <i className="material-icons md-36">{iconName}</i> {title} <i className="material-icons close" onClick={this.closeNotification}>clear</i>
+                    <i className="material-icons md-36">{iconName}</i>
+                    <span className="title">{title}</span>
+                    <i className="material-icons close" onClick={this.closeNotification}>clear</i>
                 </h3>
                 <hr />
                 <p className="content">

@@ -45,7 +45,6 @@ export default class NotificationList extends React.Component {
     }
 
     generateNotifications() {
-        console.log(JSON.stringify(this.state.notificationData));
         return (
             this.state.notificationData.map((data, idx) => {
                 return (
