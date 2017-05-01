@@ -1,7 +1,7 @@
 {
-  "name": "riskident_test",
+  "name": "react_notifier",
   "version": "1.0.0",
-  "description": "\"RiskIdent Test Web App\"",
+  "description": "\"React notifier\"",
   "main": "server.js",
   "scripts": {
     "clean": "rimraf public/bundle.* public/style.*",
@@ -19,12 +19,15 @@
   },
   "repository": {
     "type": "git",
-    "url": "\"git+https://\""
+    "url": "\"git+https://github.com/techyrajeev/React-Notifier.git\""
   },
   "keywords": [
-    "node",
-    "heroku",
-    "express"
+    "react",
+    "react-notify",
+    "react-alert",
+    "notifier",
+    "notification",
+    "react-notifier"
   ],
   "author": "Rajeev Mishra ",
   "license": "ISC",
