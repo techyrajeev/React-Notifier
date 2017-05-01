@@ -37,5 +37,5 @@ Open the Url(http://localhost:8080/) in browser
 
 ### Live Test Project on Heroku ###
 
-[https://risk-ident.herokuapp.com/](https://risk-ident.herokuapp.com/)
+[https://react-notifier.herokuapp.com/](https://react-notifier.herokuapp.com/)
 
