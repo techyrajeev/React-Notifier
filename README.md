@@ -1,4 +1,4 @@
-# Risk Ident Test Project
+# React Notifier
 
 ### Requirement:
 node : 4.x.x or above 
